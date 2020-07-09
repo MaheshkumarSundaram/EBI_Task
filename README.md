@@ -11,8 +11,10 @@ I have created a python script ```specific_cooordinate_conversion.py``` which us
 
 ### Input Format 
 
-Input for the python script is ```sequence_region_name:start..end:strand(optional)```
-Here, arguments - "Sequence Region Name, Start Position and End Position" are mandatory whereas "Strand" is optional
+Input for the python script is ```sequence_region_name:start..end:strand(optional)```.
+
+Here, arguments - "Sequence Region Name, Start Position and End Position" are mandatory whereas "Strand" is optional.
+
 For example,
 ```X:1000000..1000100:1``` or ```X:1000000..1000100```
 
