@@ -6,7 +6,7 @@ Using the latest human data from Ensembl release and the Perl API to convert coo
 
 ## Specific Coordinate Conversion
 
-I have created a python script ```convert_coordinates_GR38_GR37.pl``` which uses Ensembl REST API Endpoint to convert a specific coordinate from GRCh38 to GRCh37 assembly.
+I have created a python script ```specific_cooordinate_conversion.py``` which uses Ensembl REST API Endpoint to convert a specific coordinate from GRCh38 to GRCh37 assembly.
 
 
 ### Input Format 
@@ -18,16 +18,16 @@ For example,
 
 
 
-### Run the python script ```convert_coordinates_GR38_GR37.pl```
+### Run the python script ```specific_cooordinate_conversion.py```
 
 Input the arguments as necessary
 ```
-python3 convert_coordinates_GR38_GR37.pl X:1000000..1000100
+python3 specific_cooordinate_conversion.py X:1000000..1000100
 ```
 
 ### Output format
 
-Output will be of JSON format conatning mapping of the the chromosome region in GRCh38 to that of the coordinates in GRCh37
+Output will be of JSON format containing mapping of the the chromosome region in GRCh38 to that of the coordinates in GRCh37
 
 ```json
 {'mappings': 
@@ -41,3 +41,19 @@ Output will be of JSON format conatning mapping of the the chromosome region in 
   ]
 }
 ```
+
+## Coordinate Conversion for all regions
+
+I have created a perl script ```convert_coordinates_GR38_GR37.pl``` which uses Ensembl REST API Endpoint to convert all the chromosome sequence regions from GRCh38 to that of the coordinates in GRCh37 assembly.
+
+This script will convert all the coordinates of the chromosome and hence, there is no specific input.
+
+### Run the perl script ```convert_coordinates_GR38_GR37.pl```
+
+```
+perl convert_coordinates_GR38_GR37.pl
+```
+
+### Output
+
+Output will be a JSON format file ```data_out.json``` containing all the mappings of the the chromosome regions in GRCh38 to that of the coordinates in GRCh37
