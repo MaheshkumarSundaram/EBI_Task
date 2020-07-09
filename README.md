@@ -46,14 +46,14 @@ Output will be of JSON format containing mapping of the the chromosome region in
 
 ## Coordinate Conversion for all regions
 
-I have created a perl script ```convert_coordinates_GR38_GR37.pl``` which uses Ensembl REST API Endpoint to convert all the chromosome sequence regions from GRCh38 to that of the coordinates in GRCh37 assembly.
+I have created a perl script ```convert_coordinates_GRCh38_GRCh37.pl``` which uses Ensembl REST API Endpoint to convert all the chromosome sequence regions from GRCh38 to that of the coordinates in GRCh37 assembly.
 
 This script will convert all the coordinates of the chromosome and hence, there is no specific input.
 
-### Run the perl script ```convert_coordinates_GR38_GR37.pl```
+### Run the perl script ```convert_coordinates_GRCh38_GRCh37.pl```
 
 ```
-perl convert_coordinates_GR38_GR37.pl
+perl convert_coordinates_GRCh38_GRCh37.pl
 ```
 
 ### Output
